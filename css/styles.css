@@ -1,11 +1,27 @@
-:root {
-  --primary-font: 'Open Sans', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
-  --primary-text-color-theme-dark: #ffffff;
-  --primary-text-color-theme-light: #303030;
-  --secondary-text-color-theme-dark: #9da4bd;
-  --secondary-text-color-theme-light: #555555;
-  --accent-color: #ff6c00;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
 }
 
 .list {
@@ -16,227 +32,43 @@
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
-
-body {
-  font-family: var(--primary-font);
-}
-
-/* ==================== COMPONENTS ==================== */
-.modal-btn {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--accent-color);
-  color: #ffffff;
-}
-
-.modal-btn-theme-light {
-  color: #303030;
-}
-
-.modal-btn-theme-dark {
-  color: #ffffff;
-}
-
-.media-list-link {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-
-  color: var(--primary-text-color-theme-light);
-}
-
-.media-list-link:hover,
-.media-list-link:focus {
-  color: var(--accent-color);
-}
-
-.suptitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.suptitle-theme-dark {
-  color: var(--secondary-text-color-theme-dark);
-}
-
-.suptitle-theme-light {
-  color: var(--secondary-text-color-theme-light);
-}
-
-.section-description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-}
-
-.section-description-theme-dark {
-  color: var(--secondary-text-color-theme-dark);
-}
-
-.section-description-theme-light {
-  color: var(--secondary-text-color-theme-light);
+.text {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: 10px solid tomato;
+  box-sizing: border-box;
 }
 
 .title {
-  font-family: var(--secondary-font-family);
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
+  background-color: teal;
+  margin-bottom: 20px;
 }
 
-.title-theme-dark {
-  color: var(--primary-text-color-theme-dark);
-}
+/* an + b */
 
-.title-theme-light {
-  color: var(--primary-text-color-theme-light);
-}
-/* ==================== /COMPONENTS ==================== */
+/* 
+2n + 1 - odd
 
-/* ==================== HEADER ==================== */
-.menu-link {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-}
+2 * 0 + 1 = 1;
+2 * 1 + 1 = 3;
+*/
 
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
-}
+/* 
+2n - even
 
-.contact-phone-number {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-}
+2 * 1 = 2;
+2 * 2 = 4;
+*/
 
-.contact-phone-number:hover,
-.contact-phone-number:focus {
-  color: var(--accent-color);
-}
-/* ==================== /HEADER ==================== */
+/* 
+-n + 2
 
-/* ==================== HERO ==================== */
-.main-title {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
-}
-/* ==================== /HERO ==================== */
+-0 + 2 = 2;
+-1 + 2 = 1;
+*/
 
-/* ==================== ABOUT ==================== */
-.about-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.86;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color-theme-light);
-}
-/* ==================== /ABOUT ==================== */
-
-/* ==================== SERVICES ==================== */
-.services-table-name,
-.services-table-price {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-}
-/* ==================== /SERVICES ==================== */
-
-/* ==================== ADVANTAGES ==================== */
-.advantages-list-quantity {
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: var(--primary-text-color-theme-light);
-}
-
-.advantages-list-description {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-align: center;
-  color: var(--primary-text-color-theme-light);
-}
-/* ==================== /ADVANTAGES ==================== */
-
-/* ==================== EMPLOYEES ==================== */
-.employees-name {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.39;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color-theme-light);
-}
-
-.employees-position {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
-/* ==================== /EMPLOYEES ==================== */
-
-/* ==================== GALLERY ==================== */
-/* ==================== /GALLERY ==================== */
-
-/* ==================== CONTACT INFO ==================== */
-.contact-list-link {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color-theme-dark);
-}
-
-.contact-list-link:hover,
-.contact-list-link:focus {
-  color: var(--accent-color);
-}
-
-.contact-info-date {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color-theme-dark);
-}
-/* ==================== /CONTACT INFO ==================== */
-
-/* ==================== FOOTER ==================== */
-.copyright {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-  color: var(--secondary-text-color-theme-dark);
-}
-/* ==================== /FOOTER ==================== */
+/* .menu-item:not(:nth-last-child(-n + 2)) {
+  background-color: teal;
+  margin-bottom: 30px;
+} */
