@@ -546,8 +546,43 @@ body {
 }
 /* ==================== /GALLERY ==================== */
 
+.contact-sections-wrapper {
+  background-color: #191c26;
+  background-image: url('../images/contacts/bg.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 50% auto;
+}
+
+.contact-sections-wrapper-container {
+  display: flex;
+}
+
+/* ==================== CONTACT FORM ==================== */
+.contact-form-section {
+  width: 50%;
+}
+/* ==================== /CONTACT FORM ==================== */
+
 /* ==================== CONTACT INFO ==================== */
+.contact-info-section {
+  width: 50%;
+  padding-left: 100px;
+}
+
+.contact-info-section-address {
+  width: 260px;
+  font-style: normal;
+  margin-bottom: 66px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .contact-list-link {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -559,6 +594,18 @@ body {
 .contact-list-link:hover,
 .contact-list-link:focus {
   color: var(--accent-color);
+}
+
+.contact-list-icon {
+  flex-shrink: 0;
+  margin-right: 16px;
+  stroke: #9da4bd;
+  transition: stroke var(--transition-dur-and-func);
+}
+
+.contact-list-link:hover .contact-list-icon,
+.contact-list-link:focus .contact-list-icon {
+  stroke: var(--accent-color);
 }
 
 .contact-info-date {
