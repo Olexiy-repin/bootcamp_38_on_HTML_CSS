@@ -452,6 +452,57 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-caption">Запишіться і ми вам передзвоним</p>
+        <form class="modal-form">
+          <label class="modal-form-field">
+            <span class="modal-form-field-desc">Імʼя*</span>
+            <span class="modal-form-input-wrapper">
+              <input
+                name="user_name"
+                type="text"
+                class="modal-form-input"
+                placeholder="Oleksii"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+              />
+              <span class="modal-form-icon"></span>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-field-desc">Телефон*</span>
+            <span class="modal-form-input-wrapper">
+              <input
+                name="user_phone_number"
+                type="tel"
+                class="modal-form-input"
+                placeholder="096-234-45-45"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <span class="modal-form-icon"></span>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-field-desc">Коментар</span>
+            <textarea
+              name="user_message"
+              class="modal-form-message"
+              placeholder="повідомлення"
+            ></textarea>
+          </label>
+          <label class="modal-form-check-wrapper">
+            <input name="user_policy" type="checkbox" class="modal-form-check visually-hidden" />
+            <svg class="modal-form-own-check" width="16" height="16">
+              <use
+                class="modal-form-own-check-icon"
+                href="./images/sprite.svg#icon-checkmark"
+              ></use>
+            </svg>
+            Погоджуюсь з&nbsp;<a href="">умовами договора</a>
+          </label>
+          <button type="submit" class="modal-form-btn">Надіслати</button>
+        </form>
       </div>
     </div>
 
