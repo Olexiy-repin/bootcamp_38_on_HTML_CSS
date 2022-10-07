@@ -1,0 +1,118 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.modal-form-field-desc {
+  display: block;
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.modal-form-input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #303030;
+  border-radius: 6px;
+  padding-left: 42px;
+  transition: border-color var(--transition-dur-and-func);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: teal;
+  transition: background-color var(--transition-dur-and-func);
+
+  .modal-form-input:focus + & {
+    background-color: var(--accent-color);
+  }
+}
+
+.modal-form-message {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 15px;
+  border: 1px solid #303030;
+  border-radius: 6px;
+  transition: border-color var(--transition-dur-and-func);
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.modal-form-check-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.modal-form-own-check {
+  border: 1px solid #303030;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 2px;
+  margin-right: 10px;
+
+  .modal-form-check:checked + & {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+  .modal-form-check:focus + & {
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+  }
+}
+
+.modal-form-own-check-icon {
+  display: none;
+  fill: #ffffff;
+
+  .modal-form-check:checked + .modal-form-own-check & {
+    display: block;
+  }
+}
+
+.modal-form-btn {
+  min-width: 160px;
+  align-self: center;
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
+  transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-text-color-theme-dark);
+  }
+}
