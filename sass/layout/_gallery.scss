@@ -1,13 +1,27 @@
+@media screen and (max-width: 767px) {
+  .gallery-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .gallery-suptitle {
   margin-bottom: 44px;
 }
 
-.gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .gallery-list-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
-.gallery-list-item {
-  flex-basis: calc((100% - 90px) / 4);
+@media screen and (min-width: 1200px) {
+  .gallery-list-item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
